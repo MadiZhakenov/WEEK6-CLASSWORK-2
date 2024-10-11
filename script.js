@@ -15,7 +15,13 @@ function getCurrentDate(){
     var minute = currentDate.getMinutes();
     var second = currentDate.getSeconds();
     if(hour > 12){
+        if (hour == 24 && minute == 0 && second == 0){
+            hour = 0 + " Midnight";           
+        }
         hour = hour - 12 + " PM";
+    }
+    else if(hour == 12 && minute == 0 && second == 0){
+        hour = 0 + " Noon";
     }
     else{
         hour = hour + " AM";
@@ -81,7 +87,7 @@ function findSundaysOnJanuaryFirst(){
 }
 function removeCharacter(){
     var str = document.getElementById("string").value;
-    var index = document.getElementById("index").value;
+    var index = parseInt(document.getElementById("index").value);
     var newStr = str.substring(0, index) + str.substring(index + 1);
     alert(newStr);
 }
