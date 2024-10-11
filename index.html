@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <label for="cel_to_fah">Celsius to Fahrenheit</label>
+        <br>
+        <input type="number" id="cel_to_fah">
+        <br>
+        <button type="button" onclick="convertCelsiusToFahrenheit()">Convert</button>
+        <br>
+        <br>
+        <label for="fah_to_cel">Fahrenheit to Celsius</label>
+        <br>
+        <input type="number" id="fah_to_cel">
+        <br>
+        <button type="button" onclick="convertFahrenheitToCelsius()">Convert</button>
+    </form>
+    <form>
+        <label for="cur_date" id="cur_date"></label>
+        <br>
+        <button type="button" onclick="getCurrentDate()">Get Current Date</button>
+    </form>
+    <br>
+    <form>
+        <label for="year">Year</label>
+        <br>
+        <input type="number" id="year">
+        <br>
+        <button type="button" onclick="isLeapYear()">Check Leap Year</button>
+    </form>
+    <br>
+    <form>
+        <button type="button" onclick="findSundaysOnJanuaryFirst()">Find Sundays on Jan 1</button>
+    </form>
+    <br>
+    <form>
+        <label for="string">Text:</label>
+        <br>
+        <input type="text" id="string">
+        <br>
+        <br>
+        <input type="number" id="index">
+        <br>
+        <button type="button" onclick="removeCharacter()">Remove Character</button>
+    </form>
+</body>
+</html>
